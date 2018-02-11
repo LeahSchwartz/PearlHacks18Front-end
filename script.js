@@ -4,13 +4,13 @@ function round(value, decimals) {
 
 var dataList = [
   {
-    name:'Joe',
+    name:'Walmart',
     equal_opp: 3,
     fit: 4,
     mo: 4.5,
     ml: 3.4,
     ss: 2,
-    rank: round((3+4+4.544+3.4431+2)/5,2)
+    rank: 0
   },
   {
     name:'Uber',
@@ -19,7 +19,7 @@ var dataList = [
     mo: 4.5,
     ml: 3.4,
     ss: 1,
-    rank: (5+4+4.5+3+1)/5
+    rank: 0
   },
   {
     name:'Facebook',
@@ -28,10 +28,94 @@ var dataList = [
     mo: 4.5,
     ml: 3,
     ss: 2.5,
-    rank: (4+4.5+4.5+3+2.5)/5
+    rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
+},
+{
+  name:'Walmart',
+  equal_opp: 3,
+  fit: 4,
+  mo: 4.5,
+  ml: 3.4,
+  ss: 2,
+  rank: 0
 }
 ]
 var companyHTML
+for (h = 0; h <dataList.length; h++){
+  dataList[h].rank = round((dataList[h].equal_opp + dataList[h].fit + dataList[h].mo + dataList[h].ml + dataList[h].ss)/5,2)
+}
 let tableData="";
 for (let i = 0; i < dataList.length; i++){
   companyHTML += '<option id="' + dataList[i].name.toLowerCase() + '" value="' + dataList[i].name + '">';
