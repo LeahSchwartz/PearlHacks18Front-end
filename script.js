@@ -76,6 +76,24 @@ var dataList = [
   rank: 0
 },
 {
+  name:'Target',
+  equal_opp: 3.8,
+  fit: 3.9,
+  mo: 3.9,
+  ml: 3.1,
+  ss: 2.6,
+  rank:0
+},
+{
+  name:'Kraft',
+  equal_opp: 4.1,
+  fit: 3.0,
+  mo: 4.1,
+  ml: 3.1,
+  ss: 3.7,
+  rank:0
+},
+{
   name:'3M',
   equal_opp: 3.2,
   fit: 2.6,
