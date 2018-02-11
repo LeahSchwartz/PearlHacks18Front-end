@@ -6,6 +6,11 @@ var dataList = [
     forbes_rank: 31,
   },
   {
+    name:'Jeremy',
+    rank: 8,
+    forbes_rank: 1
+  },
+  {
     name:'Jack',
     rank: 14,
     forbes_rank: 9
@@ -22,4 +27,5 @@ $("#womensListBody").html(tableData);
 window.onload = function(){
   document.getElementById('companyList').innerHTML = companyHTML
   document.getElementById('womensListBody').innerHTML = tableData
+  $("#womensList").DataTable();
 }
