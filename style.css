@@ -1,3 +1,7 @@
+body{
+  background-color: #c4e7ed !important;
+}
+
 .searchBar{
   font-size: 32px;
   color: black;
@@ -31,9 +35,10 @@ table#womensList tr.even {
 .companyDiv{
   width: 50%;
   font-size: 50px;
-  align-items: left;
+
 }
 .rankDiv{
+  padding-top: 50px;
   width: 100%;
   font-size: 50px;
   text-align: right;
