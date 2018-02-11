@@ -76,40 +76,49 @@ var dataList = [
   rank: 0
 },
 {
-  name:'Walmart',
-  equal_opp: 3,
-  fit: 4,
-  mo: 4.5,
-  ml: 3.4,
-  ss: 2,
+  name:'GM',
+  equal_opp: 3.3,
+  fit: 3.7,
+  mo: 3.3,
+  ml: 3.2,
+  ss: 3.4,
   rank: 0
 },
 {
-  name:'Walmart',
+  name:'IBM',
   equal_opp: 3,
-  fit: 4,
-  mo: 4.5,
-  ml: 3.4,
-  ss: 2,
+  fit: 3.7,
+  mo: 3.5,
+  ml: 3.7,
+  ss: 3.0,
   rank: 0
 },
 {
-  name:'Walmart',
-  equal_opp: 3,
-  fit: 4,
-  mo: 4.5,
-  ml: 3.4,
-  ss: 2,
+  name:'Twitter',
+  equal_opp: 3.1,
+  fit: 2.4,
+  mo: 3.0,
+  ml: 4.4,
+  ss: 3.2,
   rank: 0
 },
 {
-  name:'Walmart',
-  equal_opp: 3,
-  fit: 4,
+  name:'3M',
+  equal_opp: 3.2,
+  fit: 2.6,
   mo: 4.5,
-  ml: 3.4,
-  ss: 2,
-  rank: 0
+  ml: 3.5,
+  ss: 3.2,
+  rank:0
+},
+{
+  name:'Ford',
+  equal_opp: 3.4,
+  fit: 2.6,
+  mo: 3.1,
+  ml: 3.2,
+  ss: 3.4,
+  rank:0
 }
 ]
 var companyHTML
