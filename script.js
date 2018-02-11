@@ -2,19 +2,16 @@ var dataList = [
   {
     name:'Joe',
     rank: 12,
-    forbes_rank: 31,
     equal_opp: 3
   },
   {
     name:'Uber',
     rank: 8,
-    forbes_rank: 1,
     equal_opp: 5
   },
   {
     name:'Facebook',
     rank: 14,
-    forbes_rank: 9,
     equal_opp: 10
 }
 ]
@@ -75,11 +72,12 @@ function makeCompanyName(){
         break
       }
     }
-    document.getElementById('rankDiv').innerHTML = "Rank: " + dataListItem.rank
+
+      document.getElementById('rankDiv').innerHTML = "Rank: " + dataListItem.rank+"/"+dataList.length+" companies"
 
     $("#wRankBox").html("<h1><div id='wRank'>"+dataList[0].rank+"/"+dataList.length+"</div><br>Women Ranking</h1>");
     var chart = c3.generate({
-      bindto:"#criteria",
+      bindto:"#row",
       data: {
           columns: [
               ['Equal Opportunities', 3.0],
@@ -106,8 +104,9 @@ function makeCompanyName(){
   });
 
     document.getElementById('bigDiv').style.display = 'flex'
-    document.getElementById('row').style.display = 'block'
-    document.getElementById('criteria').style.display = 'flex'
+    document.getElementById('row').style.display = 'flex'
+   document.getElementById('criteria').style.display = 'flex'
+
   } else{
      document.getElementById('bigDiv').style.display = 'none'
       document.getElementById('row').style.display = 'none'
