@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.19/c3.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <title>Filler </title>
 </head>
@@ -25,19 +26,31 @@
       <div id="rankDiv" class="rankDiv"></div>
     </div>
 
-    <div id="criteria"> </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="criteria"> </div>
 
-      <h1>W List</h1>
-    <table id="womensList">
-      <thead>
-        <tr>
-          <th>Company Name</th>
-          <th>Our Ranking</th>
-        </tr>
-      </thead>
+        </div>
+        <div class="col-sm-6">
+          <div id="wRankBox">
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <tbody id="womensListBody"></tbody>
-    </table>
+    <h1>W List</h1>
+  <table id="womensList">
+    <thead>
+      <tr>
+        <th>Company Name</th>
+        <th>Our Ranking</th>
+      </tr>
+    </thead>
+
+    <tbody id="womensListBody"></tbody>
+  </table>
+
 
 
   </body>

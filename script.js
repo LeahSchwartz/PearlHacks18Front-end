@@ -29,6 +29,7 @@ window.onload = function(){
   $("#womensList").DataTable( {
     order: [[1, 'desc']]
   });
+  $("#wRankBox").html("<h1><div id='wRank'>"+dataList[0].rank+"/"+dataList.length+"</div><br>Women Ranking</h1>");
   var chart = c3.generate({
     bindto:"#criteria",
     data: {

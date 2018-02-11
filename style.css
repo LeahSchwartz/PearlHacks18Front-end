@@ -29,3 +29,16 @@ table#womensList tr.even {
   margin: auto;
   width: 50%;
 }
+html{
+  padding: 20px;
+}
+
+#wRankBox{
+  font-family: Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+#wRank{
+    font-size: 75px;
+}
