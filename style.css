@@ -1,8 +1,8 @@
 .searchBar{
   font-size: 32px;
-  color: blue;
+  color: black;
   width: 100%;
-  border: solid blue 3px;
+  border: solid black 3px;
 }
 
 .searchBarDiv{
@@ -25,9 +25,19 @@ table#womensList tr.even {
 .bigDiv{
   padding-top: 50px;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 50px;
   margin: auto;
   width: 50%;
+}
+.companyDiv{
+  width: 50%;
+  font-size: 50px;
+  align-items: left;
+}
+.rankDiv{
+  width: 100%;
+  font-size: 50px;
+  text-align: right;
+
 }
 html{
   padding: 20px;

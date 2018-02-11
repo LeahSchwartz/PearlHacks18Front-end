@@ -71,7 +71,7 @@ function makeCompanyName(){
         break
       }
     }
-    document.getElementById('rankDiv').innerHTML = "Rank:" + dataListItem.rank
+    document.getElementById('rankDiv').innerHTML = "Rank: " + dataListItem.rank
 
     document.getElementById('bigDiv').style.display = 'flex'
   } else{
