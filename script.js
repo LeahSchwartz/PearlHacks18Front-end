@@ -1,4 +1,3 @@
-
 var dataList = [
   {
     name:'Joe',
@@ -42,10 +41,8 @@ window.onload = function(){
 
         ],
 
-        type: 'bar',
-        colors: {
-        Equal_Opportunities  : '#007bbc'
-        }
+        type: 'bar'
+
     },
     axis: {
       rotated: true
