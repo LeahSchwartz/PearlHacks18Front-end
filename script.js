@@ -43,7 +43,12 @@ window.onload = function(){
         ],
         type: 'bar',
         colors: {
-        'Equal Opportunities'  : '#b7f5ff'
+        'Equal Opportunities'  : '#202020',
+        'Females in Top Leadership' : '585858',
+        'Management Opportunities' : '#808080',
+        'Maternity Leave' : '#B8B8B8',
+        'Salary Satisfaction' : '#DCDCDC'
+
         }
     },
     axis: {
