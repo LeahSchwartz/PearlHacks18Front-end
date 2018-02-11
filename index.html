@@ -13,17 +13,16 @@
 </head>
   <body>
     <div class="title">
-      Title!!
+      Women at Work
     </div>
     <div class="searchBarDiv">
-      <input id="searchBar" class="searchBar" type="text" list="companyList">
+      <input id="searchBar" class="searchBar" type="text" list="companyList" oninput="makeCompanyName()">
       <datalist id="companyList">
       </datalist>
     </div>
-    <div class="bigDiv">
-      <div class="companyDiv">
-
-      </div>
+    <div id="bigDiv" class="bigDiv">
+      <div id="companyDiv" class="companyDiv"></div>
+      <div id="rankDiv" class="rankDiv"></div>
     </div>
 
     <div id="criteria"> </div>

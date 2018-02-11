@@ -22,3 +22,10 @@ table#womensList tr.odd {
 table#womensList tr.even {
    background-color: #FFFFFF;
 }
+.bigDiv{
+  padding-top: 50px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  margin: auto;
+  width: 50%;
+}
