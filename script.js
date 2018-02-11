@@ -6,12 +6,12 @@ var dataList = [
     forbes_rank: 31,
   },
   {
-    name:'Jeremy',
+    name:'Uber',
     rank: 8,
     forbes_rank: 1
   },
   {
-    name:'Jack',
+    name:'Facebook',
     rank: 14,
     forbes_rank: 9
 }
@@ -19,7 +19,7 @@ var dataList = [
 var companyHTML
 let tableData="";
 for (let i = 0; i < dataList.length; i++){
-  companyHTML += '<option value="' + dataList[i].name + '">';
+  companyHTML += '<option id="' + dataList[i].name.toLowerCase() + '" value="' + dataList[i].name + '">';
   tableData+= "<tr> <td>"+dataList[i].name+"</td> <td>"+dataList[i].rank+"</td> </tr>";
   console.log("<tr> <td>"+dataList[i].name+"</td> <td>"+dataList[i].rank+"</td> </tr>");
 }
@@ -52,4 +52,17 @@ window.onload = function(){
     }
 
 });
+}
+
+function makeCompanyName(){
+  var companyName = document.getElementById('searchBar').value
+  document.getElementById('companyDiv').innerHTML = '<img src="https://logo.clearbit.com/' + companyName + '.com">'
+  if (document.getElementById('companyList').options.namedItem(companyName.toLowerCase()) !== null){
+    var dataListItem = document.getElementById('companyList').options.namedItem(companyName.toLowerCase()).value
+    document.getElementById('companyDiv').innerHTML += dataListItem
+    document.getElementById('bigDiv').style.display = 'block'
+  } else{
+      document.getElementById('bigDiv').style.display = 'none'
+  }
+
 }
