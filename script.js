@@ -41,9 +41,10 @@ window.onload = function(){
             ['Salary Satisfaction', 2.1]
 
         ],
-
-        type: 'bar'
-
+        type: 'bar',
+        colors: {
+        'Equal Opportunities'  : '#b7f5ff'
+        }
     },
     axis: {
       rotated: true
@@ -56,9 +57,18 @@ function makeCompanyName(){
   var companyName = document.getElementById('searchBar').value
   document.getElementById('companyDiv').innerHTML = '<img src="https://logo.clearbit.com/' + companyName + '.com">'
   if (document.getElementById('companyList').options.namedItem(companyName.toLowerCase()) !== null){
-    var dataListItem = document.getElementById('companyList').options.namedItem(companyName.toLowerCase()).value
-    document.getElementById('companyDiv').innerHTML += dataListItem
-    document.getElementById('bigDiv').style.display = 'block'
+    var dataListItemName = document.getElementById('companyList').options.namedItem(companyName.toLowerCase()).value
+    document.getElementById('companyDiv').innerHTML += dataListItemName
+    var dataListItem
+    for (var j = 0; j<dataList.length; j++){
+      if (dataList[j].name === dataListItemName){
+        dataListItem = dataList[j]
+        break
+      }
+    }
+    document.getElementById('rankDiv').innerHTML = "Rank:" + dataListItem.rank
+
+    document.getElementById('bigDiv').style.display = 'flex'
   } else{
       document.getElementById('bigDiv').style.display = 'none'
   }
