@@ -20,12 +20,12 @@ var dataList = [
   },
   {
     name:'Facebook',
-    rank: 14,
-    equal_opp: 10,
-    fit: 12,
-    mo: 6,
-    ml: 10,
-    ss: 11
+    equal_opp: 4,
+    fit: 4.5,
+    mo: 4.5,
+    ml: 3,
+    ss: 2.5,
+    rank: (4+4.5+4.5+3+2.5)/5
 }
 ]
 var companyHTML
