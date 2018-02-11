@@ -2,17 +2,29 @@ var dataList = [
   {
     name:'Joe',
     rank: 12,
-    equal_opp: 3
+    equal_opp: 3,
+    fit: 4,
+    mo: 9,
+    ml: 5,
+    ss: 9
   },
   {
     name:'Uber',
     rank: 8,
-    equal_opp: 5
+    equal_opp: 5,
+    fit: 9,
+    mo: 11,
+    ml: 7,
+    ss: 8
   },
   {
     name:'Facebook',
     rank: 14,
-    equal_opp: 10
+    equal_opp: 10,
+    fit: 12,
+    mo: 6,
+    ml: 10,
+    ss: 11
 }
 ]
 var companyHTML
@@ -80,11 +92,11 @@ function makeCompanyName(){
       bindto:"#row",
       data: {
           columns: [
-              ['Equal Opportunities', 3.0],
-              ['Females in Top Leadership', 1.6],
-              ['Management Opportunities', 3.9],
-              ['Maternity Leave', 4.3],
-              ['Salary Satisfaction', 2.1]
+              ['Equal Opportunities', dataListItem.equal_opp],
+              ['Females in Top Leadership', dataListItem.fit],
+              ['Management Opportunities', dataListItem.mo],
+              ['Maternity Leave', dataListItem.ml],
+              ['Salary Satisfaction', dataListItem.ss]
 
           ],
           type: 'bar',
