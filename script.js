@@ -1,3 +1,6 @@
+function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
 
 var dataList = [
   {
@@ -7,7 +10,7 @@ var dataList = [
     mo: 4.5,
     ml: 3.4,
     ss: 2,
-    rank: (3+4+4.5+3.4+2)/5
+    rank: round((3+4+4.544+3.4431+2)/5,2)
   },
   {
     name:'Uber',
