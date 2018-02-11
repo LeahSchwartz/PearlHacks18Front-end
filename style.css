@@ -1,0 +1,17 @@
+.searchBar{
+  font-size: 32px;
+  color: blue;
+  width: 100%;
+  border: solid blue 3px;
+}
+
+.searchBarDiv{
+  margin: auto;
+  width: 50%;
+}
+
+.title{
+  font-family: Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  font-size: 52px;
+}
