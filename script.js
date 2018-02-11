@@ -109,7 +109,7 @@ function makeCompanyName(){
     document.getElementById('row').style.display = 'block'
     document.getElementById('criteria').style.display = 'flex'
   } else{
-      document.getElementById('bigDiv').style.display = 'none'
+     document.getElementById('bigDiv').style.display = 'none'
       document.getElementById('row').style.display = 'none'
       document.getElementById('criteria').style.display = 'none'
   }
