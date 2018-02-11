@@ -67,6 +67,42 @@ var dataList = [
   rank: 0
 },
 {
+  name:'Microsoft',
+  equal_opp: 3,
+  fit: 2.4,
+  mo: 3.5,
+  ml: 4.3,
+  ss: 3.4,
+  rank: 0
+},
+{
+  name:'UPS',
+  equal_opp: 3,
+  fit: 2.5,
+  mo: 2.9,
+  ml: 2.9,
+  ss: 2.7,
+  rank: 0
+},
+{
+  name:'Coca-Cola',
+  equal_opp: 2.6,
+  fit: 2.4,
+  mo: 2.5,
+  ml: 3.5,
+  ss: 2.6,
+  rank: 0
+},
+{
+  name:'Pepsi',
+  equal_opp: 3.3,
+  fit: 3.1,
+  mo: 3.3,
+  ml: 3.2,
+  ss: 3.2,
+  rank: 0
+},
+{
   name:'Twitter',
   equal_opp: 3.1,
   fit: 2.4,
@@ -91,6 +127,42 @@ var dataList = [
   mo: 4.1,
   ml: 3.1,
   ss: 3.7,
+  rank:0
+},
+{
+  name:'Google',
+  equal_opp: 3.6,
+  fit: 2.9,
+  mo: 3.3,
+  ml: 4.3,
+  ss: 3.7,
+  rank:0
+},
+{
+  name:'Yahoo',
+  equal_opp: 3.8,
+  fit: 3.9,
+  mo: 3.8,
+  ml: 4.3,
+  ss: 3.6,
+  rank:0
+},
+{
+  name:'Kroger',
+  equal_opp: 3.4,
+  fit: 3.3,
+  mo: 3.4,
+  ml: 2.5,
+  ss: 2.1,
+  rank:0
+},
+{
+  name:'Tesla',
+  equal_opp: 3.2,
+  fit: 2.4,
+  mo: 2.9,
+  ml: 3.5,
+  ss: 2.7,
   rank:0
 },
 {
@@ -166,7 +238,6 @@ function makeCompanyName(){
           'Management Opportunities' : '#808080',
           'Maternity Leave' : '#B8B8B8',
           'Salary Satisfaction' : '#DCDCDC'
-
           }
       },
       axis: {
