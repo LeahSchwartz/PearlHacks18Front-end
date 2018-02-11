@@ -75,7 +75,7 @@ function makeCompanyName(){
 
       document.getElementById('rankDiv').innerHTML = "Rank: " + dataListItem.rank+"/"+dataList.length+" companies"
 
-    $("#wRankBox").html("<h1><div id='wRank'>"+dataList[0].rank+"/"+dataList.length+"</div><br>Women Ranking</h1>");
+    $("#wRankBox").html("<h1><div id='wRank'>"+dataListItem.rank+"/"+dataList.length+"</div><br>Women Ranking</h1>");
     var chart = c3.generate({
       bindto:"#row",
       data: {
@@ -105,8 +105,7 @@ function makeCompanyName(){
 
     document.getElementById('bigDiv').style.display = 'flex'
     document.getElementById('row').style.display = 'flex'
-   document.getElementById('criteria').style.display = 'flex'
-
+    document.getElementById('criteria').style.display = 'flex'
   } else{
      document.getElementById('bigDiv').style.display = 'none'
       document.getElementById('row').style.display = 'none'
