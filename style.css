@@ -44,6 +44,16 @@ table#womensList tr.even {
   text-align: right;
 
 }
+
+.criteria{
+  text-align:left;
+  width: 50%;
+}
+
+.wRankBox{
+  text-align: right;
+}
+
 html{
   padding: 20px;
 }

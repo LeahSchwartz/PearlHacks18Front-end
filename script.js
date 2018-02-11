@@ -108,8 +108,8 @@ function makeCompanyName(){
     document.getElementById('bigDiv').style.display = 'flex'
     document.getElementById('row').style.display = 'block'
   } else{
-      document.getElementById('bigDiv').style.display = 'none'
+     document.getElementById('bigDiv').style.display = 'none'
       document.getElementById('row').style.display = 'none'
-  }
+ }
 
 }
